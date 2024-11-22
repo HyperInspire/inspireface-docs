@@ -66,24 +66,13 @@ nav:
       - release: getting-started/installation/release.md
       - compile: getting-started/installation/compile.md
       - docker: getting-started/installation/docker.md
-  - Platform:
-    - C/C++: platform/c-cpp.md
-    - Python: platform/python.md
-    - Android: platform/android.md
-    - iOS: platform/ios.md
-    - MacOS: platform/macos.md
-    - Rockchip-RV1109RV1126: platform/rockchip-rv1109rv1126.md
-  - Examples:
-    - Basic: examples/basic.md
-    - Feature Hub: examples/feature-hub.md
-    - Face Tracking: examples/face-tracking.md
-    - Face Recognition: examples/face-recognition.md
-    - Face Analysis: examples/face-analysis.md
+  - Features:
+    - cross-platform: features/cross-platform.md
+    - face recognition: features/face-recognition.md
+    - feature hub: features/feature-hub.md
   - Guides:
-    - Models Package: guides/models-package.md
-    - Unit-Test: guides/unit-test.md
-    - Switch CV Backend: guides/switch-cv-backend.md
-    - CMake Options: guides/cmake-options.md
-    - Error Code: guides/error-code.md
-    - Benchmark: guides/benchmark.md
-    - Performance: guides/performance.md
+    - basic: guides/basic.md
+    - unit-test: guides/unit-test.md
+    - switch-cv-backend: guides/switch-cv-backend.md
+    - cmake-options: guides/cmake-options.md
+    - benchmark: guides/benchmark.md
