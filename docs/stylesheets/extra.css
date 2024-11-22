@@ -1,53 +1,82 @@
-/* docs/stylesheets/extra.css */
-:root {
-    --md-primary-fg-color: #ffffff;
-    --md-primary-fg-color--light: #ffffff;
-    --md-primary-fg-color--dark: #1a1a1a;
-    --md-accent-fg-color: #2979ff;
-    --md-typeset-a-color: #2979ff;
-  }
-  
-  /* Header styling */
-  .md-header {
-    background-color: var(--md-primary-fg-color);
-    color: var(--md-primary-fg-color--dark);
-    box-shadow: 0 0 0.2rem rgb(0 0 0 / 10%), 0 0.2rem 0.4rem rgb(0 0 0 / 10%);
-  }
-  
-  .md-header__title {
+/* 
+/* 侧边栏整体样式 */
+.md-nav {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* 主要导航项样式 */
+.md-nav__item .md-nav__link {
+    padding: 4px 0;
+    margin: 4px 0;
+    color: #2c3e50;
     font-weight: 500;
-  }
-  
-  /* Navigation styling */
-  .md-nav__title {
-    font-weight: 700;
-  }
-  
-  .md-nav__item--active > .md-nav__link {
-    color: var(--md-accent-fg-color);
-  }
-  
-  /* Content styling */
-  .md-typeset h1 {
-    font-weight: 700;
-    color: var(--md-primary-fg-color--dark);
-  }
-  
-  .md-typeset h2 {
+}
+
+/* 激活状态的导航项 */
+.md-nav__link--active {
+    color: #2979ff !important;
+    font-weight: 600 !important;
+}
+
+/* 鼠标悬停效果 */
+.md-nav__link:hover {
+    color: #2979ff !important;
+    text-decoration: none;
+}
+
+/* 导航分组标题 */
+.md-nav__title {
     font-weight: 600;
-  }
-  
-  /* Code blocks */
-  .md-typeset code {
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 0.2rem;
-  }
-  
-  /* Navigation sections */
-  .md-nav__item .md-nav__link--active {
-    font-weight: 600;
-  }
-  
-  .md-sidebar--secondary {
-    border-left: 1px solid rgba(0, 0, 0, 0.07);
-  }
+    color: #1a1a1a;
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* 子导航项缩进 */
+.md-nav__item .md-nav__item {
+    padding-left: 12px;
+}
+
+/* 导航项之间的间距 */
+.md-nav__item {
+    padding: 2px 0;
+}
+
+/* 选中项的背景 */
+.md-nav__link--active {
+    background-color: rgba(41, 121, 255, 0.1);
+    border-radius: 4px;
+    padding: 4px 8px !important;
+    margin-left: -8px;
+}
+
+/* 主导航标题 */
+.md-nav__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    padding: 1rem 0 0.5rem;
+}
+
+/* 站点标题样式 */
+.md-header__title {
+    font-weight: 700;
+}
+
+/* 侧边栏分割线 */
+.md-nav--primary > .md-nav__list > .md-nav__item {
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+/* 最后一个项目移除分割线 */
+.md-nav--primary > .md-nav__list > .md-nav__item:last-child {
+    border-bottom: none;
+}
+
+/* 调整内容区域的边距 */
+.md-main__inner {
+    margin-top: 1.5rem;
+}
