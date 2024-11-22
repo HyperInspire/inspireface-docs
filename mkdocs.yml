@@ -1,0 +1,64 @@
+# mkdocs.yml
+site_name: InspireFace
+site_url: https://example.com/
+
+theme:
+  name: material
+
+plugins:
+  - search
+  - i18n:
+      default_language: en
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 中文
+          build: true
+      nav_translations:
+        zh:
+          Getting Started: 开始使用
+          API Reference: API 参考
+          Examples: 示例
+          Guides: 指南
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - tables
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Quick Start: getting-started/quickstart.md
+    - Installation:
+      - release: getting-started/installation/release.md
+      - compile: getting-started/installation/compile.md
+      - docker: getting-started/installation/docker.md
+  - Platform:
+    - C/C++: platform/c-cpp.md
+    - Python: platform/python.md
+    - Android: platform/android.md
+    - iOS: platform/ios.md
+    - MacOS: platform/macos.md
+    - Rockchip-RV1109RV1126: platform/rockchip-rv1109rv1126.md
+  - Examples:
+    - Basic: examples/basic.md
+    - Feature Hub: examples/feature-hub.md
+    - Face Tracking: examples/face-tracking.md
+    - Face Recognition: examples/face-recognition.md
+    - Face Analysis: examples/face-analysis.md
+  - Guides:
+    - Models Package: guides/models-package.md
+    - Unit-Test: guides/unit-test.md
+    - Switch CV Backend: guides/switch-cv-backend.md
+    - CMake Options: guides/cmake-options.md
+    - Error Code: guides/error-code.md
+    - Benchmark: guides/benchmark.md
+    - Performance: guides/performance.md

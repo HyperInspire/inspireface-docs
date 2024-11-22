@@ -1,0 +1,53 @@
+/* docs/stylesheets/extra.css */
+:root {
+    --md-primary-fg-color: #ffffff;
+    --md-primary-fg-color--light: #ffffff;
+    --md-primary-fg-color--dark: #1a1a1a;
+    --md-accent-fg-color: #2979ff;
+    --md-typeset-a-color: #2979ff;
+  }
+  
+  /* Header styling */
+  .md-header {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-fg-color--dark);
+    box-shadow: 0 0 0.2rem rgb(0 0 0 / 10%), 0 0.2rem 0.4rem rgb(0 0 0 / 10%);
+  }
+  
+  .md-header__title {
+    font-weight: 500;
+  }
+  
+  /* Navigation styling */
+  .md-nav__title {
+    font-weight: 700;
+  }
+  
+  .md-nav__item--active > .md-nav__link {
+    color: var(--md-accent-fg-color);
+  }
+  
+  /* Content styling */
+  .md-typeset h1 {
+    font-weight: 700;
+    color: var(--md-primary-fg-color--dark);
+  }
+  
+  .md-typeset h2 {
+    font-weight: 600;
+  }
+  
+  /* Code blocks */
+  .md-typeset code {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 0.2rem;
+  }
+  
+  /* Navigation sections */
+  .md-nav__item .md-nav__link--active {
+    font-weight: 600;
+  }
+  
+  .md-sidebar--secondary {
+    border-left: 1px solid rgba(0, 0, 0, 0.07);
+  }
