@@ -1,17 +1,12 @@
-# Welcome to Your SDK Documentation
+# InspireFace
+[![GitHub release](https://img.shields.io/github/v/release/HyperInspire/InspireFace.svg?style=for-the-badge&color=blue)](https://github.com/HyperInspire/InspireFace/releases/latest)
+[![build](https://img.shields.io/github/actions/workflow/status/HyperInspire/InspireFace/release-sdks.yaml?&style=for-the-badge&label=build)](https://img.shields.io/github/actions/workflow/status/HyperInspire/InspireFace/release-sdks.yaml?&style=for-the-badge&label=build)
+[![test](https://img.shields.io/github/actions/workflow/status/HyperInspire/InspireFace/release-sdks.yaml?&style=for-the-badge&label=test)](https://img.shields.io/github/actions/workflow/status/HyperInspire/InspireFace/test_ubuntu_x86_Pikachu.yaml?&style=for-the-badge&label=test)
 
-This documentation will help you integrate and use our SDK effectively in your applications.
+InspireFace is a cross-platform face recognition SDK developed in C/C++, supporting multiple operating systems and various backend types for inference, such as CPU, GPU, and NPU.
 
-## Features
+If you require further information on tracking development branches, CI/CD processes, or downloading pre-compiled libraries, please visit our [development repository](https://github.com/HyperInspire/InspireFace).
 
-- Easy-to-use client interface
-- Comprehensive authentication methods
-- Rich set of API resources
-- Extensive examples and use cases
+Please contact [contact@insightface.ai](mailto:contact@insightface.ai?subject=InspireFace) for commercial support, including obtaining and integrating higher accuracy models, as well as custom development.
 
-## Quick Navigation
-
-- [Installation Guide](getting-started/installation.md)
-- [Quick Start](getting-started/quickstart.md)
-- [API Reference](api-reference/client.md)
-- [Examples](examples/basic-usage.md)
+![InspireFace Logo](/assert/images/banner.jpg)

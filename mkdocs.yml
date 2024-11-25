@@ -4,6 +4,8 @@ site_url: https://example.com/
 
 theme:
   name: material
+  static_templates:
+    - assets/images
   palette:
     - scheme: default
       primary: white
@@ -62,17 +64,14 @@ nav:
   - Home: index.md
   - Getting Started:
     - Quick Start: getting-started/quickstart.md
-    - Installation:
-      - release: getting-started/installation/release.md
-      - compile: getting-started/installation/compile.md
-      - docker: getting-started/installation/docker.md
+    - Installation: getting-started/installation.md
   - Features:
-    - cross-platform: features/cross-platform.md
-    - face recognition: features/face-recognition.md
-    - feature hub: features/feature-hub.md
+    - Cross Platform: features/cross-platform.md
+    - Face Recognition: features/face-recognition.md
+    - Feature Hub: features/feature-hub.md
   - Guides:
-    - basic: guides/basic.md
-    - unit-test: guides/unit-test.md
-    - switch-cv-backend: guides/switch-cv-backend.md
-    - cmake-options: guides/cmake-options.md
-    - benchmark: guides/benchmark.md
+    - Basic: guides/basic.md
+    - Unit Test: guides/unit-test.md
+    - Switch CV Backend: guides/switch-cv-backend.md
+    - CMake Options: guides/cmake-options.md
+    - Benchmark: guides/benchmark.md
